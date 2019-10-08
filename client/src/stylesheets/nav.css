@@ -1,0 +1,28 @@
+nav {
+  background: lightgrey;
+}
+
+nav a {
+  font-size: 20px;
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+}
+
+nav a.home-link {
+  position: relative;
+  float: left;
+  top: 5px;
+}
+
+nav a:hover {
+  color: darkgrey;
+}
+
+nav ul {
+  float: right;
+}
+
+nav ul li {
+  display: inline-block;
+}
