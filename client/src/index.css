@@ -36,3 +36,37 @@ html {
 .center {
   text-align: center;
 }
+
+.pad-25 {
+  padding: 25px;
+}
+
+.btn {
+  font-size: 20px;
+  background: lightgrey;
+  border-radius: 10px 10px;
+  margin-top: 10px;
+  padding: 5px;
+  font-family: cursive, serif;
+}
+
+.input-field {
+  padding: 5px;
+  font-size: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"], input[type="password"] {
+  display: flex;
+  border-radius: 10px 10px;
+  flex: 1;
+}
+
+.btn:hover {
+  background: grey;
+  color: lightgrey;
+}
