@@ -47,7 +47,7 @@ export class Login extends Component {
                    value={ this.state.password }
                    onChange={ this.handleChange } />
           </div>
-          <input type="submit" value="Create Account" className="btn" />
+          <input type="submit" value="Login" className="btn" />
         </form>
       </div>
     )
