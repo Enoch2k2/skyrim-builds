@@ -5,6 +5,8 @@ let headersOptions = {
 
 const parseJson = resp => resp.json();
 
+export const isLoggedIn = () => !!localStorage.getItem('token');
+
 const loginUser = user => {
   return {
     type: "LOGIN_USER",

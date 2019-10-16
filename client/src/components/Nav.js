@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { connect } from 'react-redux';
 import '../stylesheets/nav.css';
 
-import { logout } from '../actions/auth';
+import { logout, isLoggedIn } from '../actions/auth';
 
 export class Nav extends Component {
   handleLogout = () => {
@@ -11,7 +11,7 @@ export class Nav extends Component {
   }
 
   render() {
-    let links = this.props.currentUser ? [
+    let links = this.props.currentUser || isLoggedIn() ? [
       <li key={1}><Link to="#">Characters</Link></li>,
       <li key={2}><Link to="#">Create Character</Link></li>,
       <li key={3}><Link to="#" onClick={ this.handleLogout }>Logout</Link></li>
