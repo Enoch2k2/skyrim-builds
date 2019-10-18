@@ -32,20 +32,20 @@ export class Login extends Component {
         <h1 className="center">Login</h1>
         <form onSubmit={ this.handleSubmit }>
           <div className="input-field">
-            <label htmlFor="username">Username: </label>
             <input type="text" 
                    name="username"
                    id="username"
                    value={ this.state.username }
                    onChange={ this.handleChange } />
+            <label htmlFor="username">Username: </label>
           </div>
           <div className="input-field">
-            <label htmlFor="password">Password: </label>
             <input type="password"
                    name="password"
                    id="password"
                    value={ this.state.password }
                    onChange={ this.handleChange } />
+            <label htmlFor="password">Password: </label>
           </div>
           <input type="submit" value="Login" className="btn" />
         </form>

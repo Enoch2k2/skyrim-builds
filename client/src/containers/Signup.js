@@ -32,28 +32,28 @@ export class Signup extends Component {
         <h1 className="center">Signup</h1>
         <form onSubmit={ this.handleSubmit }>
           <div className="input-field">
-            <label htmlFor="username">Username: </label>
             <input type="text" 
                    name="username"
                    id="username"
                    value={ this.state.username }
                    onChange={ this.handleChange } />
+            <label htmlFor="username">Username: </label>
           </div>
           <div className="input-field">
-            <label htmlFor="password">Password: </label>
             <input type="password"
                    name="password"
                    id="password"
                    value={ this.state.password }
                    onChange={ this.handleChange } />
+            <label htmlFor="password">Password: </label>
           </div>
           <div className="input-field">
-            <label htmlFor="password_confirmation">Password Confirmation: </label>
             <input type="password"
                    name="password_confirmation"
                    id="password_confirmation"
                    value={ this.state.password_confirmation }
                    onChange={ this.handleChange } />
+            <label htmlFor="password_confirmation">Password Confirmation: </label>
           </div>
           <input type="submit" value="Create Account" className="btn" />
         </form>

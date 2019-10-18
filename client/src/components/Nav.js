@@ -21,11 +21,13 @@ export class Nav extends Component {
     ]
 
     return (
-      <nav className="clearfix">
-        <Link to="/" className="home-link">Home</Link>
-        <ul>
-          { links }
-        </ul>
+      <nav className="black">
+        <div className="container">
+          <Link to="/" className="brand-logo">Skyrim Builds</Link>
+          <ul className="right">
+            { links }
+          </ul>
+        </div>
       </nav>
     )
   }
